@@ -26,7 +26,7 @@ using System.Net.Sockets;
 using System.Net;
 using System.Net.Http;
 
-namespace LandMass_Manager
+namespace TNET_Manager
 {
     /// <summary>
     /// Interação lógica para MainWindow.xam
@@ -342,7 +342,7 @@ namespace LandMass_Manager
                 //-----------------------------------------//
                 var content = new FormUrlEncodedContent(nameValueCollection);
                 //--------------------------------------//
-                var response = await client.PostAsync("http://landmass.com.br/Achievements/ban.php", content);
+                var response = await client.PostAsync("http://??????????", content); // Add "ban" link .php
                 //---------------------------------------//
                 var msg = await response.Content.ReadAsStringAsync();
             }

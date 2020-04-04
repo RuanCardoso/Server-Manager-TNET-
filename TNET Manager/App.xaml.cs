@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace LandMass_Manager
+namespace TNET_Manager
 {
     /// <summary>
     /// Interação lógica para App.xaml

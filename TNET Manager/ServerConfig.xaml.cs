@@ -18,7 +18,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using TNet;
 
-namespace LandMass_Manager
+namespace TNET_Manager
 {
     /// <summary>
     /// Lógica interna para ServerConfig.xaml

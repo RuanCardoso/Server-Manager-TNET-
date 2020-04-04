@@ -15,7 +15,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace LandMass_Manager
+namespace TNET_Manager
 {
     /// <summary>
     /// Lógica interna para InputBox.xaml

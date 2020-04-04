@@ -1,7 +1,7 @@
-﻿<Application x:Class="LandMass_Manager.App"
+﻿<Application x:Class="TNET_Manager.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:LandMass_Manager"
+             xmlns:local="clr-namespace:TNET_Manager"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          
