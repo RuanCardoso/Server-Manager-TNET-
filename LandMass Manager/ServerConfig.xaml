@@ -9,6 +9,9 @@
         mc:Ignorable="d"
         Title="Server Config" Height="308.591" Width="271.526" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="Icons/config.png">
 	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition/>
+		</Grid.ColumnDefinitions>
 		<GroupBox Header="ADVANCED" HorizontalAlignment="Left" Height="95" Margin="6,5,0,0" VerticalAlignment="Top" Width="254" Controls:HeaderedControlHelper.HeaderBackground="#CC1158AE">
 			<Grid HorizontalAlignment="Left" Height="73" Margin="-2,-4,-4,-4" VerticalAlignment="Top" Width="250">
 				<Label x:Name="ud" Content="UDP:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-3,3,0,0"/>

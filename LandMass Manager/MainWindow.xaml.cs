@@ -24,6 +24,7 @@ using System.Globalization;
 using TNet;
 using System.Net.Sockets;
 using System.Net;
+using System.Net.Http;
 
 namespace LandMass_Manager
 {
@@ -322,8 +323,28 @@ namespace LandMass_Manager
                     Kick(reason);
                     {
                         SendReason(reason, "Banido");
+                        {
+                            AddBanToDatabase(player.Text, time);
+                        }
                     }
                 }
+            }
+        }
+        async void AddBanToDatabase(string username, DateTime? time)
+        {
+            using(HttpClient client = new HttpClient())
+            {
+                Dictionary<string, string> nameValueCollection = new Dictionary<string, string>()
+                {
+                    { "data", time.ToString() },
+                    { "name", username }
+                };
+                //-----------------------------------------//
+                var content = new FormUrlEncodedContent(nameValueCollection);
+                //--------------------------------------//
+                var response = await client.PostAsync("http://landmass.com.br/Achievements/ban.php", content);
+                //---------------------------------------//
+                var msg = await response.Content.ReadAsStringAsync();
             }
         }
         public void UnBan(string _hwid)
@@ -467,6 +488,12 @@ namespace LandMass_Manager
         {
             singleton.ComboServer.SelectedIndex -= 1;
         }
+
+        private void filterPlayer_TextChanged(Object sender, TextChangedEventArgs e)
+        {
+
+        }
+
         private void GameServerPortChange_KeyDown(Object sender, KeyEventArgs e)
         {
             try

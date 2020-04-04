@@ -47,7 +47,7 @@
 				<Button Content="ADMIN" HorizontalAlignment="Left" Margin="-1,98,-1,0" VerticalAlignment="Top" Width="168" FontWeight="Bold" Height="30" BorderThickness="1"/>
 			</Grid>
 		</GroupBox>
-		<TextBox x:Name="filterPlayer" HorizontalAlignment="Left" Height="9" Margin="432,6,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Opacity="0.295" ToolTip="Filter Player" MaxLength="30" Background="#FF7A7A7A"/>
+		<TextBox x:Name="filterPlayer" HorizontalAlignment="Left" Height="9" Margin="432,6,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Opacity="0.295" ToolTip="Filter Player" MaxLength="30" Background="#FF7A7A7A" TextChanged="filterPlayer_TextChanged"/>
 		<Label x:Name="hwidLabel" Content="HWID:" HorizontalAlignment="Left" Margin="-1,290,0,-5" VerticalAlignment="Top" Height="24" Width="171" FontSize="10" FontStyle="Italic" FontWeight="Bold"/>
 		<ComboBox x:Name="ComboServer" HorizontalAlignment="Left" Margin="474,35,0,0" VerticalAlignment="Top" Width="78" Height="24" Background="#FDEAEAEA" SelectedIndex="0" SelectionChanged="ComboServer_SelectionChanged">
 			<ComboBoxItem Content="Server 1" HorizontalAlignment="Left" Width="86"/>
